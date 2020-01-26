@@ -39,7 +39,6 @@ class Student
   end 
   
   def self.create(:name,:grade)
-    
     student_var = Student.new(name, grade)
     student_var.save 
   end
