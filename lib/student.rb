@@ -33,11 +33,18 @@ class Student
   end 
   
   def save 
+    sql = <<-SQL
     
+    SQL
   end 
   
-  def self.create 
+  def self.create(attrs_hash)
     
+    Student.new(attrs_hash[0],attrs_hash[1])
+    
+    sql = <<-SQL
+    
+    SQL
   end
   
 end
