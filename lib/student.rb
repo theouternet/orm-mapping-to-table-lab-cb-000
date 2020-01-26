@@ -40,7 +40,9 @@ class Student
   
   def self.create(:name,:grade)
     
-    Student.new(attrs_hash[0],attrs_hash[1])
+    student_var = Student.new(name, grade)
+    
+    student_var.save 
     
     sql = <<-SQL
     
