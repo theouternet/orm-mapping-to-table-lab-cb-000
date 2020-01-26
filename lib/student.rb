@@ -41,12 +41,7 @@ class Student
   def self.create(:name,:grade)
     
     student_var = Student.new(name, grade)
-    
     student_var.save 
-    
-    sql = <<-SQL
-    
-    SQL
   end
   
 end
