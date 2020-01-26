@@ -38,7 +38,7 @@ class Student
     SQL
   end 
   
-  def self.create(attrs_hash)
+  def self.create(:name,:grade)
     
     Student.new(attrs_hash[0],attrs_hash[1])
     
